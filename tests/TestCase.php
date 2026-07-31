@@ -7,6 +7,8 @@ use Spatie\LaravelMorphMapGenerator\MorphMapGeneratorServiceProvider;
 
 class TestCase extends Orchestra
 {
+    public static $latestResponse;
+
     protected function getPackageProviders($app)
     {
         return [
