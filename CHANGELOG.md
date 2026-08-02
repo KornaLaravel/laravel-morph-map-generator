@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-morph-map-generator` will be documented in this file
 
+## 1.4.1 - 2026-08-02
+
+### What's Changed
+
+* Fix tests by @erikn69 in https://github.com/spatie/laravel-morph-map-generator/pull/24
+* fix: allow Laravel to handle class loading errors by @erikn69 in https://github.com/spatie/laravel-morph-map-generator/pull/25
+
+**Full Changelog**: https://github.com/spatie/laravel-morph-map-generator/compare/1.4.0...1.4.1
+
 ## 1.4.0 - 2026-02-25
 
 Add Laravel 13.x compatibility
