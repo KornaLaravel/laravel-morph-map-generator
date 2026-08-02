@@ -106,8 +106,12 @@ class DiscoverModels
         }
 
         foreach ($this->baseModels as $baseModelClass) {
-            if (is_subclass_of($class, $baseModelClass)) {
-                return true;
+            try {
+                if (is_subclass_of($class, $baseModelClass)) {
+                    return true;
+                }
+            } catch (\Throwable $e) {
+                // Allow Laravel to handle class loading errors, such as syntax errors.
             }
         }
 
